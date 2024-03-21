@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Add fonts from Adobe fonts or Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap" rel="stylesheet">
+
+    <title>Submit Recommendations</title>
+    <!-- Add a favicon -->
+    <link rel="icon" href="icon.png" type="image/x-icon">
+</head>
+<body>
+    <!-- Implement a skip to main! -->
+    <div class="skip"><a href="#main">Skip to Main Content</a></div>
+    <main id="main">
+      <h1>My Form</h1>
+    <!-- <form action="" method="post"> Connect to formspree.io-->
+        <form
+        action="https://formspree.io/f/xpzvjkjq"
+        method="POST"
+        >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name"><br><br>
+<div class="radio">
+        <label>Area of Submission:</label><br>
+  <input type="radio" id="travel" name="interest" value="travel" required>
+  <label for="travel">Travel</label><br>
+  <input type="radio" id="recipe" name="interest" value="recipe" tabindex="0">
+  <label for="recipe">Recipe</label><br>
+  <input type="radio" id="pets" name="interest" value="pets">
+  <label for="pets">Pets</label><br><br>
+</div>
+
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message"></textarea><br><br>
+
+        <label for="image">Upload Image:</label><br>
+        <input type="file" id="image" name="image"><br><br>
+
+        <input type="submit" value="Submit">
+
+        <button type="reset">Reset</button>
+      </form>
+      </main>
+</body>
+</html>
